@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portifolio.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="">My Portfolio</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#more-info">More Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-me" class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm Byiringiro Urban Bobola</h1>
+                <p>A dedicated technology enthusiast with a profound passion for problem-solving through innovative coding solutions. Explore my journey and projects below.</p>
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Bahuze Real Estate</h3>
+                    <p>Focused on delivering innovative property listings and management solutions to help clients find their dream homes.</p>
+                </div>
+                <div class="project-card">
+                    <h3>TechRise Rwanda</h3>
+                    <p>An initiative to empower Rwandans through technology, focusing on training and developing cutting-edge solutions for local challenges.</p>
+                </div>
+                <div class="project-card">
+                    <h3>WISE Academy</h3>
+                    <p>Providing top-notch education and training services, with a mission to nurture the next generation of leaders and innovators.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Urban Bet</h3>
+                    <p>A platform offering gaming services and entertainment solutions, bringing excitement and opportunities to the community.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos">
+            <h2>My Photos</h2>
+            <div class="photo-gallery">
+                <img src="image.png" alt="Photo 1" onclick="showPhotoPopup('image.png')">
+                <img src="image2.png" alt="Photo 2" onclick="showPhotoPopup('image2.png')">
+                <img src="image3.png" alt="Photo 3" onclick="showPhotoPopup('image3.png')">
+                <img src="image4.png" alt="Photo 4" onclick="showPhotoPopup('image4.png')">
+                
+            </div>
+        </section>
+
+        <div id="photo-popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close" onclick="closePhotoPopup()">&times;</span>
+                <img id="popup-photo" src="" alt="Popup Photo">
+            </div>
+        </div>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="more-info">
+            <h2>Additional Information</h2>
+            <div class="info-buttons">
+                <button onclick="showPopup('education')">Education</button>
+                <button onclick="showPopup('certifications')">Certifications</button>
+                <button onclick="showPopup('work-experience')">Work Experience</button>
+                <button onclick="showPopup('skills')">Technical Skills</button>
+                <button onclick="showPopup('achievements')">Achievements</button>
+                <button onclick="showPopup('hobbies')">Hobbies</button>
+                <button onclick="showPopup('references')">References</button>
+            </div>
+        </section>
+
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <div id="popup-data"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Byiringiro Urban Bobola. All rights reserved.</p>
+    </footer>
+
+    <script src="portifolio.js"></script>
+</body>
+</html>

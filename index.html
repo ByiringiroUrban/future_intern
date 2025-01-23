@@ -3,45 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Portal</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <nav class="navbar">
-            <div class="logo">InternshipHub</div>
+        <div class="logo"><a href="index.html">Mr Urban</div></a>
+        <nav>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portifolio.html">Portfolio</a></li>
+                <li><a href="temperature.html">Temperature Converter</a></li>
+                <li><a href="carculator.html">Calculator</a></li>
             </ul>
-            <button class="menu-toggle">☰</button>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Unlock Your <span class="highlight">Potential</span></h1>
-            <p>Join our internship program and take on real-world challenges that boost your skills and career prospects. Learn, innovate, and grow with us!</p>
-            <button id="get-started-button">Get Started</button>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
+    <main>
+        <section id="landing-page" class="hero">
+            <div class="hero-content">
+                <h1>Unleash Your Potential</h1>
+                <p>"Dream big, create bigger. Your journey to innovation begins here."</p>
+                <a href="portifolio.html"><button id="get-started">Discover More</button></a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Connect with us on:</p>
-        <div class="social-media">
-            <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="Facebook"></a>
-            <a href="#" aria-label="Twitter"><img src="icons/twitter.svg" alt="Twitter"></a>
-            <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram"></a>
-            <a href="#" aria-label="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We create innovative solutions that empower creativity and simplify lives. Join us on this journey to excellence.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: Byiringirourban20@gmail.com</p>
+                <p>Phone: +250 788 854 243</p>
+            </div>
+            <div class="footer-section social-media">
+                <h2>Follow Us</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Whatsapp</a>
+            </div>
         </div>
-        <p>© 2025 InternshipHub. All rights reserved.</p>
+        <p class="footer-bottom">&copy; 2025 Byiringiro Urban Bobola. All rights reserved.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
